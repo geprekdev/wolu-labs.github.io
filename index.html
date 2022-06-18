@@ -18,10 +18,25 @@
     <main
       class="mx-auto h-screen overflow-y-scroll max-w-[444px] mb-[56px] p-0 pb-24 shadow-lg border"
     >
+      <!-- aa -->
+      <div class="fixed bottom-12 z-10 w-[443px] flex justify-center">
+        <div class="flex flex-row space-x-6">
+          <div class="flex group -ml-3">
+            <a
+              class="px-[15px] py-2 bg-blue-500 shadow-xl my-auto rounded-full border-2 border-white"
+            >
+              <span class="flex flex-col items-center">
+                <i class="mdi mdi-location-enter text-white text-[27px]"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ddd -->
       <!-- bottom nav -->
       <div class="flex items-center justify-center">
         <div
-          class="fixed bottom-0 px-2 bg-white w-[443px] flex justify-center border border-x-0"
+          class="fixed bottom-0 px-2 bg-white w-[443px] h-[80px] flex justify-center border border-x-0"
         >
           <div class="flex flex-row space-x-6">
             <!-- Item #1 -->
@@ -33,7 +48,7 @@
                 <span class="flex flex-col items-center">
                   <!-- Icon -->
                   <i
-                    class="mdi mdi-home-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                    class="mdi mdi-home mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
                   ></i>
 
                   <!-- Text -->
@@ -49,48 +64,51 @@
               </a>
             </div>
 
-            <!-- Item #2 -->
-            <div class="flex group">
-              <a class="px-3 py-2 text-indigo-800 hover:text-indigo-800">
-                <span class="flex flex-col items-center">
-                  <!-- Icon -->
-                  <i
-                    class="mdi mdi-note-edit-outline mdi-24px mx-1 text-indigo-800 group-hover:text-indigo-800 transition-color duration-200"
-                  ></i>
-
-                  <!-- Text -->
-                  <span class="text-xs mb-2 transition-all duration-200">
-                    Presence
-                  </span>
-
-                  <!-- Focus Dot -->
-                  <span
-                    class="h-1 w-4 bg-indigo-500 rounded-full group-hover:bg-indigo-500 transition-all duration-150 delay-100"
-                  ></span>
-                </span>
-              </a>
-            </div>
-
-            <!-- Item #3 Active -->
+            <!-- Item #1 -->
             <div class="flex group">
               <a
-                href="statistic.html"
+                href="index.html"
                 class="px-3 py-2 text-indigo-400 hover:text-indigo-800"
               >
                 <span class="flex flex-col items-center">
                   <!-- Icon -->
                   <i
-                    class="mdi mdi-signal-cellular-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                    class="mdi mdi-calendar-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
                   ></i>
 
                   <!-- Text -->
                   <span class="text-xs mb-2 transition-all duration-200">
-                    Statistic
+                    Scheduled
                   </span>
 
                   <!-- Focus Dot -->
                   <span
-                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 transition-all duration-150 delay-100"
+                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 hover:h-3 hover:w-3 transition-all duration-150 delay-100"
+                  ></span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Item #3 -->
+            <div class="flex group">
+              <a
+                href="index.html"
+                class="px-3 py-2 text-indigo-400 hover:text-indigo-800"
+              >
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="mdi mdi-bell-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    Notification
+                  </span>
+
+                  <!-- Focus Dot -->
+                  <span
+                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 hover:h-3 hover:w-3 transition-all duration-150 delay-100"
                   ></span>
                 </span>
               </a>
@@ -148,7 +166,7 @@
                   ></i>
 
                   <!-- Text -->
-                  <span class="text-xs mt-2"> Masuk</span>
+                  <span class="text-xs mt-2"> Statistic</span>
                 </span>
               </a>
             </div>
