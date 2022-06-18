@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="dist/output.css" />
+    <!-- MDI Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+    />
+    <title>Dashboard - SiAmaWolu</title>
+  </head>
+  <body class="overflow-y-hidden">
+    <main
+      class="mx-auto h-screen overflow-y-scroll max-w-[444px] mb-[56px] p-0 pb-24 shadow-lg border"
+    >
+      <!-- bottom nav -->
+      <div class="flex items-center justify-center">
+        <div
+          class="fixed bottom-0 px-2 bg-white w-[443px] flex justify-center border border-x-0"
+        >
+          <div class="flex flex-row space-x-6">
+            <!-- Item #1 -->
+            <div class="flex group">
+              <a
+                href="index.html"
+                class="px-3 py-2 text-indigo-400 hover:text-indigo-800"
+              >
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="mdi mdi-home-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    Home
+                  </span>
+
+                  <!-- Focus Dot -->
+                  <span
+                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 hover:h-3 hover:w-3 transition-all duration-150 delay-100"
+                  ></span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Item #2 -->
+            <div class="flex group">
+              <a class="px-3 py-2 text-indigo-800 hover:text-indigo-800">
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="mdi mdi-note-edit-outline mdi-24px mx-1 text-indigo-800 group-hover:text-indigo-800 transition-color duration-200"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    Presence
+                  </span>
+
+                  <!-- Focus Dot -->
+                  <span
+                    class="h-1 w-4 bg-indigo-500 rounded-full group-hover:bg-indigo-500 transition-all duration-150 delay-100"
+                  ></span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Item #3 Active -->
+            <div class="flex group">
+              <a
+                href="statistic.html"
+                class="px-3 py-2 text-indigo-400 hover:text-indigo-800"
+              >
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="mdi mdi-signal-cellular-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    Statistic
+                  </span>
+
+                  <!-- Focus Dot -->
+                  <span
+                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 transition-all duration-150 delay-100"
+                  ></span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Item #5 -->
+            <div class="flex group">
+              <a
+                href="account.html"
+                class="px-3 py-2 text-indigo-400 hover:text-indigo-800"
+              >
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="mdi mdi-account-circle-outline mdi-24px mx-1 text-indigo-400 group-hover:text-indigo-800 transition-color duration-200"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mb-2 transition-all duration-200">
+                    Account
+                  </span>
+
+                  <!-- Focus Dot -->
+                  <span
+                    class="h-2 w-2 rounded-full group-hover:bg-indigo-500 transition-all duration-150 delay-100"
+                  ></span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end bottom -->
+
+      <!-- profile -->
+      <div class="block p-10">
+        <p class="text-sm font-light">Selamat Siang,</p>
+        <p class="">Azriel Sebastian</p>
+      </div>
+      <!-- end profile -->
+
+      <!-- Navigation Bar -->
+      <div class="flex px-10">
+        <div
+          class="px-2 bg-gradient-to-r text-white from-blue-700 to-[#63c2f0] shadow-lg rounded-lg w-full"
+        >
+          <div class="flex flex-row justify-center">
+            <!-- Item #1 -->
+            <div class="flex group box-border">
+              <a class="px-3 pb-3 py-3">
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="px-2 mdi mdi-timer text-[23px] text-blue-600 bg-white rounded-full shadow-2xl"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mt-2"> Masuk</span>
+                </span>
+              </a>
+            </div>
+            <!-- end Item #1 -->
+
+            <!-- Item #2 -->
+            <div class="flex group">
+              <a class="px-3 pb-3 py-3">
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="px-2 mdi mdi-note-text text-[23px] text-blue-600 bg-white rounded-full shadow-2xl"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mt-2"> Presence </span>
+                </span>
+              </a>
+            </div>
+            <!-- end Item #2 -->
+
+            <!-- Item #3 -->
+            <div class="flex group">
+              <a class="px-3 pb-3 py-3">
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="px-2 mdi mdi-note-check text-[23px] text-blue-600 bg-white rounded-full shadow-2xl"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mt-2"> Activity </span>
+                </span>
+              </a>
+            </div>
+            <!-- end Item #3 -->
+
+            <!-- Item #4 -->
+            <div class="flex group">
+              <a class="px-3 pb-3 py-3">
+                <span class="flex flex-col items-center">
+                  <!-- Icon -->
+                  <i
+                    class="px-2 mdi mdi-send-circle text-[23px] text-blue-600 bg-white rounded-full shadow-2xl"
+                  ></i>
+
+                  <!-- Text -->
+                  <span class="text-xs mt-2">Izin</span>
+                </span>
+              </a>
+            </div>
+            <!-- end Item #4 -->
+          </div>
+        </div>
+      </div>
+      <!-- End Navigation Bar -->
+
+      <!-- Check in check out -->
+      <p class="mt-6 px-10 pb-3 font-normal text-sm">
+        <i class="mdi mdi-calendar-range text-blue-500"></i> TODAY - SELASA, 26
+        AGUSTUS 2021
+      </p>
+      <div class="mb-6 mx-10 shadow-[0_12px_50px_-6px_rgb(0,0,0,0.15)]">
+        <div class="flex bg-white p-3 border border-x-0 border-t-0 border-b-1">
+          <i
+            class="mx-2 px-2 mdi mdi-location-enter text-white text-[26px] bg-blue-500 shadow-md my-auto rounded-full"
+          ></i>
+          <div class="flex flex-col justify-center w-full px-5 py-1">
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <h2 class="text-sm font-medium">CHECK-IN</h2>
+              </div>
+            </div>
+            <div class="flex pt-2 text-sm text-gray-400">
+              <div class="flex items-center mr-auto">
+                <div class="font-normal">
+                  <p>
+                    Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
+                    <span class="font-semibold">9:00</span> WIB
+                  </p>
+
+                  <p>
+                    Checked in at:
+                    <span class="font-semibold"> </span> --:--
+                  </p>
+                </div>
+              </div>
+
+              <!-- <div class="flex items-center font-medium text-gray-900">
+                $1800
+                <span class="text-gray-400 text-sm font-normal"> /wk</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="flex p-3">
+          <i
+            class="mx-2 px-2 mdi mdi-location-exit text-white text-[26px] bg-[#ffd94e] shadow-md my-auto rounded-full"
+          ></i>
+          <div class="flex flex-col justify-center w-full px-5 py-1">
+            <div class="flex justify-between items-center">
+              <div class="flex flex-col">
+                <h2 class="text-sm font-medium">CHECK-OUT</h2>
+              </div>
+            </div>
+            <div class="flex pt-2 text-sm text-gray-400">
+              <div class="flex items-center mr-auto">
+                <div class="font-normal">
+                  <p>
+                    Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
+                    <span class="font-semibold">9:00</span> WIB
+                  </p>
+
+                  <p>
+                    Checked in at:
+                    <span class="font-semibold"> </span> --:--
+                  </p>
+                </div>
+              </div>
+
+              <!-- <div class="flex items-center font-medium text-gray-900">
+                $1800
+                <span class="text-gray-400 text-sm font-normal"> /wk</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end check in check out -->
+
+      <!-- Current Lecture -->
+      <div class="px-10">
+        <p class="font-normal text-sm">
+          <i class="mdi mdi-book-variant text-blue-400"></i> CURRENT LECTURE
+        </p>
+        <div
+          class="py-4 px-8 bg-gradient-to-r text-white from-blue-700 to-[#63c2f0] shadow-lg rounded-lg my-5"
+        >
+          <a href="absen.html">
+            <div>
+              <h2 id="subject" class="text-white text-[16px] font-semibold">
+                Pemodelan Perangkat Lunak
+              </h2>
+              <h2 class="mt-2 text-white" id="time">11:20 - 14:46 WIB</h2>
+            </div>
+          </a>
+          <div class="flex justify-end mt-4">
+            <a href="absen.html"> </a
+            ><a
+              id="teacher"
+              href="statistic.html"
+              class="text-sm font-medium text-white"
+            >
+              Agung Setiawan S.kom
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- End Currect Lecture -->
+    </main>
+  </body>
+</html>
