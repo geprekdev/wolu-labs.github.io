@@ -12,25 +12,23 @@
       rel="stylesheet"
       href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
     />
-    <title>Dashboard - SiAmaWolu</title>
+    <title>SiAmaWolu</title>
   </head>
   <body class="overflow-y-hidden">
     <main
       class="mx-auto h-screen overflow-y-scroll max-w-[444px] mb-[56px] p-0 pb-24 shadow-lg border"
     >
       <!-- aa -->
-      <div class="fixed bottom-14 z-10 w-[443px] flex justify-center">
-        <div class="flex flex-row">
-          <div class="flex group">
-            <a
-              class="px-[15px] py-2 bg-blue-500 shadow-xl my-auto rounded-full border-2 border-white"
-            >
-              <span class="flex flex-col items-center">
-                <i class="mdi mdi-location-enter text-white text-[27px]"></i>
-              </span>
-            </a>
-          </div>
-        </div>
+      <div
+        class="fixed bottom-14 z-10 w-full max-w-[444px] -ml-1 flex justify-center"
+      >
+        <a
+          class="px-[15px] py-2 bg-blue-500 shadow-xl my-auto rounded-full border-2 border-white"
+        >
+          <span class="flex flex-col items-center">
+            <i class="mdi mdi-location-enter text-white text-[27px]"></i>
+          </span>
+        </a>
       </div>
       <!-- ddd -->
       <!-- bottom nav -->
@@ -229,77 +227,83 @@
         <i class="mdi mdi-calendar-range text-blue-500"></i> TODAY - SELASA, 26
         AGUSTUS 2021
       </p>
-      <div class="mb-6 mx-5 shadow-[0_12px_50px_-6px_rgb(0,0,0,0.15)]">
-        <div class="flex bg-white p-3 border border-x-0 border-t-0 border-b-1">
-          <i
-            class="mx-2 px-2 mdi mdi-location-enter text-white text-[26px] bg-blue-500 shadow-md my-auto rounded-full"
-          ></i>
-          <div class="flex flex-col justify-center w-full px-5 py-1">
-            <div class="flex justify-between items-center">
-              <div class="flex flex-col">
-                <h2 class="text-sm font-medium">CHECK-IN</h2>
-              </div>
-            </div>
-            <div class="flex pt-2 text-sm text-gray-400">
-              <div class="flex items-center mr-auto">
-                <div class="font-normal">
-                  <p>
-                    Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
-                    <span class="font-semibold">9:00</span> WIB
-                  </p>
 
-                  <p>
-                    Checked in at:
-                    <span class="font-semibold"> </span> --:--
-                  </p>
+      <div class="block mx-5 my-5">
+        <div class="shadow-[0_12px_50px_-6px_rgb(0,0,0,0.15)]">
+          <div
+            class="flex bg-white p-3 border border-x-0 border-t-0 border-b-1"
+          >
+            <i
+              class="mx-2 px-2 mdi mdi-location-enter text-white text-[26px] bg-blue-500 shadow-md my-auto rounded-full"
+            ></i>
+            <div class="flex flex-col justify-center w-full px-5 py-1">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h2 class="text-sm font-medium">CHECK-IN</h2>
                 </div>
               </div>
+              <div class="flex pt-2 text-sm text-gray-400">
+                <div class="flex items-center mr-auto">
+                  <div class="font-normal">
+                    <p>
+                      Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
+                      <span class="font-semibold">9:00</span> WIB
+                    </p>
 
-              <!-- <div class="flex items-center font-medium text-gray-900">
-                $1800
-                <span class="text-gray-400 text-sm font-normal"> /wk</span>
-              </div> -->
+                    <p>
+                      Checked in at:
+                      <span class="font-semibold"> </span> --:--
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <div class="flex items-center font-medium text-gray-900">
+                  $1800
+                  <span class="text-gray-400 text-sm font-normal"> /wk</span>
+                </div> -->
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="flex p-3">
-          <i
-            class="mx-2 px-2 mdi mdi-location-exit text-white text-[26px] bg-[#ffd94e] shadow-md my-auto rounded-full"
-          ></i>
-          <div class="flex flex-col justify-center w-full px-5 py-1">
-            <div class="flex justify-between items-center">
-              <div class="flex flex-col">
-                <h2 class="text-sm font-medium">CHECK-OUT</h2>
-              </div>
-            </div>
-            <div class="flex pt-2 text-sm text-gray-400">
-              <div class="flex items-center mr-auto">
-                <div class="font-normal">
-                  <p>
-                    Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
-                    <span class="font-semibold">9:00</span> WIB
-                  </p>
-
-                  <p>
-                    Checked in at:
-                    <span class="font-semibold"> </span> --:--
-                  </p>
+          <div class="flex p-3">
+            <i
+              class="mx-2 px-2 mdi mdi-location-exit text-white text-[26px] bg-[#ffd94e] shadow-md my-auto rounded-full"
+            ></i>
+            <div class="flex flex-col justify-center w-full px-5 py-1">
+              <div class="flex justify-between items-center">
+                <div class="flex flex-col">
+                  <h2 class="text-sm font-medium">CHECK-OUT</h2>
                 </div>
               </div>
+              <div class="flex pt-2 text-sm text-gray-400">
+                <div class="flex items-center mr-auto">
+                  <div class="font-normal">
+                    <p>
+                      Sheduled: <i class="mdi mdi-alarm text-green-500"></i>
+                      <span class="font-semibold">9:00</span> WIB
+                    </p>
 
-              <!-- <div class="flex items-center font-medium text-gray-900">
-                $1800
-                <span class="text-gray-400 text-sm font-normal"> /wk</span>
-              </div> -->
+                    <p>
+                      Checked in at:
+                      <span class="font-semibold"> </span> --:--
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <div class="flex items-center font-medium text-gray-900">
+                  $1800
+                  <span class="text-gray-400 text-sm font-normal"> /wk</span>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
+
       <!-- end check in check out -->
 
       <!-- Current Lecture -->
-      <div class="px-5">
+      <div class="px-5 mb-10">
         <p class="font-normal text-sm">
           <i class="mdi mdi-book-variant text-blue-400"></i> CURRENT LECTURE
         </p>
