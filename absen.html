@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <style>
+      #map {
+        height: 70%;
+        z-index: 1;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="relative mx-auto mb-[56px] h-screen max-w-[444px] border pb-24 shadow-lg"
+    >
+      <a
+        href="index.html"
+        class="absolute right-4 top-3 z-20 rounded-full inline-block bg-white shadow-lg py-2"
+      >
+        <i class="text-black text-[20px] mdi mdi-arrow-left mt-3 px-5"></i>
+      </a>
+      <div id="map"></div>
+
+      <div
+        class="absolute z-20 bottom-0 w-full h-[40%] bg-white shadow-2xl rounded-t-3xl px-5 py-3"
+      >
+        <h1 class="text-[20px] font-medium">Lokasi</h1>
+        <h1 class="text-[14px]">Jl. Pandanaran SMK 8 Semarang</h1>
+        <div class="grid grid-cols-2 gap-2 py-3 text-center">
+          <div>
+            <h2 class="text-[14px]">Clock In</h2>
+            <h3 class="text-[30px]">--:--</h3>
+          </div>
+          <!-- ... -->
+          <div>
+            <h2 class="text-[14px]">Clock In</h2>
+            <h3 class="text-[30px]">--:--</h3>
+          </div>
+        </div>
+        <button
+          type="button"
+          class="border border-indigo-500 bg-indigo-500 text-white rounded-md w-full py-3 transition duration-500 ease select-none hover:bg-indigo-600 focus:outline-none focus:shadow-outline"
+        >
+          Clock In
+        </button>
+      </div>
+
+      <script>
+        var map = L.map("map").setView(
+          [-6.9903295022757925, 110.42043886548369],
+          18
+        );
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          maxZoom: 19,
+          attribution: "© OpenStreetMap",
+        }).addTo(map);
+        var marker = L.marker([-6.9903295022757925, 110.42043886548369]).addTo(
+          map
+        );
+      </script>
+    </div>
+  </body>
+</html>
