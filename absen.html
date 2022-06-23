@@ -34,7 +34,7 @@
     <div class="relative mx-auto h-screen max-w-[444px] border pb-24 shadow-lg">
       <a
         href="index.html"
-        class="absolute right-4 top-3 z-20 rounded-full inline-block bg-white shadow-lg py-2"
+        class="absolute left-4 top-3 z-20 rounded-full inline-block bg-white shadow-lg py-2"
       >
         <i class="text-black text-[20px] mdi mdi-arrow-left mt-3 px-5"></i>
       </a>
@@ -65,10 +65,9 @@
       </div>
 
       <script>
-        var map = L.map("map").setView(
-          [-6.9903295022757925, 110.42043886548369],
-          16
-        );
+        var map = L.map("map", {
+          zoomControl: false,
+        }).setView([-6.9903295022757925, 110.42043886548369], 16);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           maxZoom: 19,
           attribution: "© OpenStreetMap",
